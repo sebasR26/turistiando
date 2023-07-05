@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">turistiandov2</string>
-    <string name="resenahoteles">Considerando que la libertad, la justicia y la paz en el mundo tienen por base el reconocimiento de la dignidad intrinseca y de los derechos iguales e inalienables de todos los miembros de la familia humana;
-
-Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado, como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;</string>
+    <string name="resenahoteles">En san jeronimo encontras muchas y diversas clases de hoteles, lujosos y economicos, al igual que hoteles famosos por su gran comodidad de hospedaje,
+    aqui podras encontrar hoteles desde 5.000 pesos colombianos la noche hasta 1.000.000 de pesos colombianos la noche, temas y eventos especiales en cada hoteles
+    claramente mejorando su calidad entre mayor el precio, ¿Deseas saber mas?, continua y encontraras mas informacion sobre estos.</string>
+    <string name="resenarestaurantes">En san jeronimo tenemos excelente atencion, comida muy rica lugar agradable y freso. ambiente muy familiar y con calidad en sus comida
+    precios economicos y casi en cualquier restaurante podras encontrar su comida tipíca la deliciosa morcilla, tenemos variedad de comida, encontraras muchas lugares de calidad
+    donde desayudar, almorzar  y cenar, pero si eres de aquellos que les encanta la comida rapida aqui encontraras lugares de calidad con porciones muy generosas
+    y a un excelente precio.</string>
+    <string name="resenaturismo">En san jeronimo nunca te aburriras, siempre tendras cosas por hacer, Lugares para ver, formas de recorrer y experiencias destacadas,
+    visita el parque de los tamarindos, o el parque acuatico kanaloa, o si eres mas extremos podrias ir a lanzarte en parapente, ver a los bikes junkies o ir al museo, hay miles de cosas por hacer
+    el limite es tu imaginacion, creatividad o aburrimiento.</string>
+    <string name="opcion1">Ingles</string>
+    <string name="opcion2">Italiano</string>
+    <string name="opcion3">Español</string>
+    <string name="opcion4">Acerca de nosotros</string>
 
 </resources>

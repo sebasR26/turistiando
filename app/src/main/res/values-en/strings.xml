@@ -2,12 +2,18 @@
 <resources>
 
     <string name="app_name">turistiandov2</string>
-    <string name="resenahoteles">Considerando que la libertad, la justicia y la paz en el mundo tienen por
-        base el reconocimiento de la dignidad intrinseca y de los
-        derechos iguales e inalienables de todos los miembros de la familia humana;
-
-Considerando que el desconocimiento y el menosprecio de los derechos humanos han originado actos de
-        barbarie ultrajantes para la conciencia de la humanidad, y que se ha proclamado,
-        como la aspiracion mas elevada del hombre, el advenimiento de un mundo en que los seres humanos, liberados del temor
-        y de la miseria, disfruten de la libertad de palabra y de la libertad de creencias;</string>
+    <string name="resenahoteles">In San Jeronimo you will find many and diverse kinds of hotels, luxurious and cheap, as well as hotels famous for their great lodging comfort.
+    Here you can find hotels from 5,000 Colombian pesos per night to 1,000,000 Colombian pesos per night, themes and special events in each hotel
+    clearly improving its quality the higher the price, do you want to know more?, continue and you will find more information about them.</string>
+    <string name="resenarestaurantes">In San Jeronimo we have excellent service, very rich food, a pleasant and fresh place. very familiar atmosphere and quality food
+    cheap prices and almost in any restaurant you can find your typical food the delicious black pudding, we have a variety of food, you will find many quality places
+    where to have breakfast, lunch and dinner, but if you are one of those who love fast food here you will find quality places with very generous portions
+    and at an excellent price.</string>
+    <string name="resenaturismo">In San Jeronimo you will never get bored, you will always have things to do, Places to see, ways to travel and outstanding experiences,
+    visit the tamarindos park, or the kanaloa water park, or if you are more extreme you could go paragliding, see the bike junkies or go to the museum, there are thousands of things to do
+    the limit is your imagination, creativity or boredom.</string>
+    <string name="opcion1">English</string>
+    <string name="opcion2">Italian</string>
+    <string name="opcion3">Spanish</string>
+    <string name="opcion4">About us</string>
 </resources>

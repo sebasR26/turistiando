@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">turistiandov2</string>
+    <string name="resenahoteles">A San Jeronimo troverai molti e diversi tipi di hotel, lussuosi ed economici, oltre a hotel famosi per il loro grande comfort di alloggio.
+    Qui puoi trovare hotel da 5.000 pesos colombiani a notte a 1.000.000 di pesos colombiani a notte, temi ed eventi speciali in ogni hotel
+    migliorandone nettamente la qualita quanto piu alto e il prezzo, vuoi saperne di piu?, continua e troverai maggiori informazioni su di loro.</string>
+    <string name="resenarestaurantes">A San Jeronimo abbiamo un servizio eccellente, cibo molto ricco, un posto piacevole e fresco. atmosfera molto familiare e cibo di qualita
+    prezzi economici e quasi in ogni ristorante puoi trovare il tuo cibo tipico il delizioso sanguinaccio, abbiamo una varieta di cibo, troverai molti posti di qualita
+    dove fare colazione, pranzo e cena, ma se sei uno di quelli che amano il fast food qui troverai locali di qualita con porzioni molto abbondanti
+    e ad un ottimo prezzo.</string>
+    <string name="resenaturismo">A San Jeronimo non ti annoierai mai, avrai sempre cose da fare, luoghi da vedere, modi di viaggiare ed esperienze straordinarie,
+    visita il parco tamarindos, o il parco acquatico kanaloa, o se sei piu estremo potresti andare in parapendio, vedere i drogati di bici o andare al museo, ci sono migliaia di cose da fare
+    il limite e la tua immaginazione, creativita o noia.</string>
+    <string name="opcion1">Inglese</string>
+    <string name="opcion2">Italiano</string>
+    <string name="opcion3">spagnolo</string>
+    <string name="opcion4">Chi siamo</string>
 </resources>
