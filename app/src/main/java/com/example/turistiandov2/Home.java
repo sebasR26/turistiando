@@ -39,19 +39,21 @@ public class Home extends AppCompatActivity {
         botonRestaurantes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "en algun momento aqui abra algo", Toast.LENGTH_SHORT).show();
-            }
+                Intent intentRestaurante  = new  Intent(Home.this,RestaurantesHome.class);
+                startActivity(intentRestaurante)
+                ;            }
         });
 
         botonTurismo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "en algun momento aqui abra algo", Toast.LENGTH_SHORT).show();
-            }
+                Intent intentTurismo  = new  Intent(Home.this,Turismo.class);
+                startActivity(intentTurismo)
+                ;            }
         });
     }
 
-    public boolean onCrateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
