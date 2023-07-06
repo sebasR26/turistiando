@@ -2,6 +2,7 @@ package com.example.turistiandov2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,8 +31,9 @@ public class Home extends AppCompatActivity {
         botonHoteles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "en algun momento aqui abra algo", Toast.LENGTH_SHORT).show();
-            }
+                Intent intentHoteles  = new  Intent(Home.this,HotelesHome.class);
+                startActivity(intentHoteles)
+;            }
         });
 
         botonRestaurantes.setOnClickListener(new View.OnClickListener() {
@@ -59,12 +61,16 @@ public class Home extends AppCompatActivity {
         int itemSeleccionado = item.getItemId();
         switch (itemSeleccionado){
             case (R.id.opcion1):
+                Toast.makeText(this, "quiero que este en ingles", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.opcion2):
+                Toast.makeText(this, "quiero que este en español", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.opcion3):
+                Toast.makeText(this, "quiero que este en italiano", Toast.LENGTH_SHORT).show();
                 break;
             case (R.id.opcion4):
+                Toast.makeText(this, "quiero ir a acerca de nosotros", Toast.LENGTH_SHORT).show();
                 break;
 
         }
@@ -72,4 +78,7 @@ public class Home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
 
     }
+
+    public void cambiaIdioma(){}
+
 }

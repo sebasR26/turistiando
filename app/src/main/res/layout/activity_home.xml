@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/editar"
+    android:background="@drawable/fondo1"
     tools:context=".Home">
 
     <ImageView
         android:id="@+id/logo"
-        android:src="@drawable/pueblito"
+        android:src="@drawable/iglesia"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         />
     <TextView
         android:id="@+id/titulo"
@@ -33,7 +33,7 @@
         />
     <Button
         android:id="@+id/botonhoteles"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/royalblue"
         android:text="HOTELES"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
 
     <Button
         android:id="@+id/botonrestaurante"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/royalblue"
         android:text="RESTAURANTE"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
 
     <Button
         android:id="@+id/botonturismo"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/royalblue"
         android:text="turismo"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
