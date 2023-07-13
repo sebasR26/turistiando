@@ -48,7 +48,7 @@
     <Button
         android:id="@+id/botonrestaurante"
         android:backgroundTint="@color/royalblue"
-        android:text="RESTAURANTE"
+        android:text="RESTAURANtE"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

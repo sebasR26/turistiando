@@ -15,4 +15,8 @@
     <string name="opcion3">Español</string>
     <string name="opcion4">Acerca de nosotros</string>
 
+    <string name="usuario">Nombre de usuario</string>
+    <string name="contraseña">contraseña</string>
+    <string name="ingresar"></string>
+
 </resources>
