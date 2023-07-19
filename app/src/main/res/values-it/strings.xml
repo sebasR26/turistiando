@@ -15,4 +15,13 @@
     <string name="opcion2">Italiano</string>
     <string name="opcion3">spagnolo</string>
     <string name="opcion4">Chi siamo</string>
+
+    <string name="usuario">nome</string>
+    <string name="contraseña">password</string>
+    <string name="ingresar">entrare</string>
+    <string name="hoteles">alberghi</string>
+    <string name="restaurante">ristorante</string>
+    <string name="turismo">turismo</string>
+
+    <string name="bienvenido">benvenuto</string>
 </resources>

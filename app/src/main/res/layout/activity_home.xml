@@ -34,7 +34,7 @@
     <Button
         android:id="@+id/botonhoteles"
         android:backgroundTint="@color/royalblue"
-        android:text="HOTELES"
+        android:text="@string/hoteles"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
     <Button
         android:id="@+id/botonrestaurante"
         android:backgroundTint="@color/royalblue"
-        android:text="RESTAURANtE"
+        android:text="@string/restaurante"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/botonturismo"
         android:backgroundTint="@color/royalblue"
-        android:text="turismo"
+        android:text="@string/turismo"
         android:layout_marginHorizontal="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,5 +72,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.02"
         />
+
+    <TextView
+        android:id="@+id/bienenido"
+        app:layout_constraintTop_toBottomOf="@id/botonturismo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/bienvenido"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/cliente"
+        app:layout_constraintTop_toBottomOf="@id/bienenido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="cliente"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        app:layout_constraintVertical_bias="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

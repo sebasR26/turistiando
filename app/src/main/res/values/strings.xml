@@ -17,6 +17,12 @@
 
     <string name="usuario">Nombre de usuario</string>
     <string name="contraseña">contraseña</string>
-    <string name="ingresar"></string>
+    <string name="ingresar">ingresar</string>
+    <string name="hoteles">hoteles</string>
+    <string name="restaurante">restaurante</string>
+    <string name="turismo">turismo</string>
+
+    <string name="bienvenido">bienvenido</string>
+
 
 </resources>

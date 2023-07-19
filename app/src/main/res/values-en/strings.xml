@@ -16,4 +16,13 @@
     <string name="opcion2">Italian</string>
     <string name="opcion3">Spanish</string>
     <string name="opcion4">About us</string>
+
+    <string name="usuario">name</string>
+    <string name="contraseña">password</string>
+    <string name="ingresar">enter</string>
+    <string name="hoteles">hotel</string>
+    <string name="restaurante">restaurant</string>
+    <string name="turismo">tourism</string>
+
+    <string name="bienvenido">welcome</string>
 </resources>
