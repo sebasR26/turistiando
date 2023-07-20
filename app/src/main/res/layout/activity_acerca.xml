@@ -4,6 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
     tools:context=".acerca">
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEBASTIAN RESTREPO PALACIO"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+
+        />
+
+        <ImageView
+            android:id="@+id/gato"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:src="@drawable/gato1"
+            app:layout_constraintTop_toBottomOf="@id/myname"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.05"
+            />
+    
+    <TextView
+        android:id="@+id/yop"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:text="@string/yo"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/myname"
+        app:layout_constraintStart_toEndOf="@id/gato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.158"
+        />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sebassrp47@gmail.com"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/yop"
+        app:layout_constraintStart_toEndOf="@id/gato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/git"
+        app:layout_constraintTop_toBottomOf="@id/correo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="github.com/sebasR26"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0"
+
+
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
