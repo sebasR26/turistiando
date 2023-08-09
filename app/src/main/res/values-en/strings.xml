@@ -29,5 +29,6 @@
     <string name="contacto">contact</string>
     <string name="telefonos"> phone </string>
     <string name="plato">recommended dish </string>
+    <string name="name">NAME: </string>
 
 </resources>
