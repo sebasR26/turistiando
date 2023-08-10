@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/restaurante"
+    android:background="@drawable/restaurante2"
     tools:context=".RestaurantesHome">
 
     <TextView
@@ -38,6 +38,7 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <Button
+        android:id="@+id/botonVerMasRestaurante"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:text="VER MAS"
