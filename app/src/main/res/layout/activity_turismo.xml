@@ -41,12 +41,12 @@
         android:id="@+id/botonVerMasTurismo"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:background="@drawable/boton"
         android:text="VER MAS"
-        app:layout_constraintTop_toBottomOf="@id/descripcion"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.3"/>
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descripcion"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

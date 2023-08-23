@@ -21,6 +21,7 @@ public class Turismo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Turismo.this, ListaSitiosTuristicos.class);
+                startActivity(intent);
             }
         });
 

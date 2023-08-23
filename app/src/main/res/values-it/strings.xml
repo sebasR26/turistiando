@@ -25,9 +25,9 @@
 
     <string name="bienvenido">benvenuto</string>
     <string name="yo">Produttore multimediale creativo e di talento, SEBASTIAN RESTREPO PALACIO affascina con le sue capacità in quasi tutti i tipi di argomenti multimediali.La sua padronanza di vari strumenti e tecnologie lo rende un leader innovativo nel campo della produzione multimediale.</string>
-    <string name="contacto">contatto</string>
-    <string name="telefonos"> telefono </string>
-    <string name="plato">piatto consigliato </string>
+    <string name="contacto">contatto: </string>
+    <string name="telefonos"> telefono: </string>
+    <string name="plato">piatto consigliato: </string>
     <string name="name">NOME: </string>
 
 
