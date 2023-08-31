@@ -10,17 +10,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.turistiandov2.AmpliandoHotel;
 import com.example.turistiandov2.AmpliandoRestaurantes;
 import com.example.turistiandov2.R;
-import com.example.turistiandov2.moldes.molderestaurant;
+import com.example.turistiandov2.moldes.Molderestaurant;
 
 import java.util.ArrayList;
 
 public class adaptadorRestaurantes extends RecyclerView.Adapter<adaptadorRestaurantes.viewHolder>{
     //todos adaptador tiene unalista de elementos
 
-    public ArrayList<molderestaurant> listarestaurante;
+    public ArrayList<Molderestaurant> listarestaurante;
 
     //creamos un consructor vacio
 
@@ -31,7 +30,7 @@ public class adaptadorRestaurantes extends RecyclerView.Adapter<adaptadorRestaur
     //creamos un constructor lleno
 
 
-    public adaptadorRestaurantes(ArrayList<molderestaurant> listarestaurante) {
+    public adaptadorRestaurantes(ArrayList<Molderestaurant> listarestaurante) {
         this.listarestaurante = listarestaurante;
     }
 
@@ -74,7 +73,7 @@ public class adaptadorRestaurantes extends RecyclerView.Adapter<adaptadorRestaur
 
         }
 
-        public void actualizarDatos(molderestaurant molderestaurant) {
+        public void actualizarDatos(Molderestaurant molderestaurant) {
 
             nombreRetaurante.setText(molderestaurant.getNombre());
             fotoRestaurante.setImageResource(molderestaurant.getImagen());
@@ -86,6 +85,7 @@ public class adaptadorRestaurantes extends RecyclerView.Adapter<adaptadorRestaur
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(itemView.getContext(), AmpliandoRestaurantes.class);
+                    intent.putExtra("datosRestaurant",molderestaurant);
                     itemView.getContext().startActivity(intent);
                 }
             });

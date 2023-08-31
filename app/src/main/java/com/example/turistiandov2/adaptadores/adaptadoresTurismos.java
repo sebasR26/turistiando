@@ -10,10 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.turistiandov2.AmpliandoHotel;
 import com.example.turistiandov2.Ampliandoturismo;
 import com.example.turistiandov2.R;
-import com.example.turistiandov2.moldes.moldeturismo;
+import com.example.turistiandov2.moldes.Moldeturismo;
 
 import java.util.ArrayList;
 
@@ -21,7 +20,7 @@ public class adaptadoresTurismos extends RecyclerView.Adapter<adaptadoresTurismo
 
     //todos adaptador tiene unalista de elementos
 
-    public ArrayList<moldeturismo> listaTurismo;
+    public ArrayList<Moldeturismo> listaTurismo;
 
     //creamos un consructor vacio
 
@@ -32,7 +31,7 @@ public class adaptadoresTurismos extends RecyclerView.Adapter<adaptadoresTurismo
     //creamos un constructor lleno
 
 
-    public adaptadoresTurismos(ArrayList<moldeturismo> listaTurismo) {
+    public adaptadoresTurismos(ArrayList<Moldeturismo> listaTurismo) {
         this.listaTurismo = listaTurismo;
     }
 
@@ -73,7 +72,7 @@ public class adaptadoresTurismos extends RecyclerView.Adapter<adaptadoresTurismo
 
         }
 
-        public void actualizarDatos(moldeturismo moldeturismo) {
+        public void actualizarDatos(Moldeturismo moldeturismo) {
             nombreTurismo.setText(moldeturismo.getNombre());
             fotoTurismo.setImageResource(moldeturismo.getFoto());
             contactoTurismo.setText(moldeturismo.getContacto());
@@ -84,6 +83,7 @@ public class adaptadoresTurismos extends RecyclerView.Adapter<adaptadoresTurismo
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(itemView.getContext(), Ampliandoturismo.class);
+                    intent.putExtra("datosTurismo",moldeturismo);
                     itemView.getContext().startActivity(intent);
                 }
             });

@@ -1,6 +1,8 @@
 package com.example.turistiandov2.moldes;
 
-public class moldeturismo {
+import java.io.Serializable;
+
+public class Moldeturismo implements Serializable {
 
     private String nombre;
     private String contacto;
@@ -8,10 +10,10 @@ public class moldeturismo {
     private String precio;
     private Integer foto;
 
-    public moldeturismo() {
+    public Moldeturismo() {
     }
 
-    public moldeturismo(String nombre, String contacto, String telefono, String precio, Integer foto) {
+    public Moldeturismo(String nombre, String contacto, String telefono, String precio, Integer foto) {
         this.nombre = nombre;
         this.contacto = contacto;
         this.telefono = telefono;

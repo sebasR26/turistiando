@@ -1,6 +1,8 @@
 package com.example.turistiandov2.moldes;
 
-public class molderestaurant {
+import java.io.Serializable;
+
+public class Molderestaurant implements Serializable {
 
     private String nombre;
     private String telefono;
@@ -8,10 +10,10 @@ public class molderestaurant {
     private String plato;
     private Integer imagen;
 
-    public molderestaurant() {
+    public Molderestaurant() {
     }
 
-    public molderestaurant(String nombre, String telefono, String rangoPrecio, String plato, Integer imagen) {
+    public Molderestaurant(String nombre, String telefono, String rangoPrecio, String plato, Integer imagen) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.rangoPrecio = rangoPrecio;
