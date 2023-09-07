@@ -7,6 +7,8 @@ public class MoldeHotel implements Serializable {
     private String precio;
     private String telefono;
     private Integer foto;
+    private String descripcion;
+    private Integer fotoAdicional;
 
 
         //constructor vacio
@@ -16,11 +18,31 @@ public class MoldeHotel implements Serializable {
 
 
         //constructor lleno
-    public MoldeHotel(String nombre, String precio, String telefono, Integer foto) {
+
+
+    public MoldeHotel(String nombre, String precio, String telefono, Integer foto, String descripcion, Integer fotoAdicional) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
         this.foto = foto;
+        this.descripcion = descripcion;
+        this.fotoAdicional = fotoAdicional;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getFotoAdicional() {
+        return fotoAdicional;
+    }
+
+    public void setFotoAdicional(Integer fotoAdicional) {
+        this.fotoAdicional = fotoAdicional;
     }
 
     public String getNombre() {

@@ -28,6 +28,7 @@
     <string name="telefonos"> telefonos: </string>
     <string name="plato">plato recomendado: </string>
     <string name="name">NOMBRE: </string>
+    <string name="comentario">COMENTARIO: </string>
 
 
 </resources>

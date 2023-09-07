@@ -29,6 +29,7 @@
     <string name="telefonos"> telefono: </string>
     <string name="plato">piatto consigliato: </string>
     <string name="name">NOME: </string>
+    <string name="comentario">COMMENTO: </string>
 
 
 </resources>
