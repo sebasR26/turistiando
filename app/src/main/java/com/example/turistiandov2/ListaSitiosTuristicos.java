@@ -31,10 +31,10 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
     }
 
     public void llenarListConDatos(){
-        ListaSitiosTuristicos.add(new Moldeturismo("EL JABALI ARDIENTE","JUAN PEREZ","123456789","$10000",R.drawable.lturismo1));
-        ListaSitiosTuristicos.add(new Moldeturismo("EL LAGO OSCURO","RGELIO MARTES","321654987","$1000",R.drawable.lturismo2));
-        ListaSitiosTuristicos.add(new Moldeturismo("EL CARAMBA","JORGEN MARTIN","963258741","$20000",R.drawable.lturismo3));
-        ListaSitiosTuristicos.add(new Moldeturismo("MARTES DE GALERIA","YERSON LUZ","741258963","$16000",R.drawable.lturismo4));
-        ListaSitiosTuristicos.add(new Moldeturismo("CHA CHA CHA","SEBASTIAN POLO","357894126","$28000",R.drawable.lturismo5));
+        ListaSitiosTuristicos.add(new Moldeturismo("EL JABALI ARDIENTE","JUAN PEREZ","123456789","$10000",R.drawable.lturismo1,R.drawable.lturismo5,"1.0","es un hotel que esta muy bonito ñeaa"));
+        ListaSitiosTuristicos.add(new Moldeturismo("EL LAGO OSCURO","RGELIO MARTES","321654987","$1000",R.drawable.lturismo2,R.drawable.lturismo4,"2.0","algunas veces aparece un anñapero todo bien"));
+        ListaSitiosTuristicos.add(new Moldeturismo("EL CARAMBA","JORGEN MARTIN","963258741","$20000",R.drawable.lturismo3,R.drawable.lturismo3,"3.0","se me acabaron las papitas estoy muy triste"));
+        ListaSitiosTuristicos.add(new Moldeturismo("MARTES DE GALERIA","YERSON LUZ","741258963","$16000",R.drawable.lturismo4,R.drawable.lturismo2,"4.0","algun dia saldre de este infierno"));
+        ListaSitiosTuristicos.add(new Moldeturismo("CHA CHA CHA","SEBASTIAN POLO","357894126","$28000",R.drawable.lturismo5,R.drawable.lturismo1,"5.0","vi un concierto de canserbero en vivo"));
     }
 }

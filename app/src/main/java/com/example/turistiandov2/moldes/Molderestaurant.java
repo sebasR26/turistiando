@@ -10,17 +10,49 @@ public class Molderestaurant implements Serializable {
     private String plato;
     private Integer imagen;
 
+    private Integer fotoAdicionalRestaurante;
+
+    private String valoracionAmpliandoRestauant;
+
+    private  String descripcionAmpliandoRestaurante;
+
     public Molderestaurant() {
     }
 
-    public Molderestaurant(String nombre, String telefono, String rangoPrecio, String plato, Integer imagen) {
+    public Molderestaurant(String nombre, String telefono, String rangoPrecio, String plato, Integer imagen, Integer fotoAdicionalRestaurante, String valoracionAmpliandoRestauant, String descripcionAmpliandoRestaurante) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.rangoPrecio = rangoPrecio;
         this.plato = plato;
         this.imagen = imagen;
+        this.fotoAdicionalRestaurante = fotoAdicionalRestaurante;
+        this.valoracionAmpliandoRestauant = valoracionAmpliandoRestauant;
+        this.descripcionAmpliandoRestaurante = descripcionAmpliandoRestaurante;
     }
 
+    public String getDescripcionAmpliandoRestaurante() {
+        return descripcionAmpliandoRestaurante;
+    }
+
+    public void setDescripcionAmpliandoRestaurante(String descripcionAmpliandoRestaurante) {
+        this.descripcionAmpliandoRestaurante = descripcionAmpliandoRestaurante;
+    }
+
+    public String getValoracionAmpliandoRestauant() {
+        return valoracionAmpliandoRestauant;
+    }
+
+    public void setValoracionAmpliandoRestauant(String valoracionAmpliandoRestauant) {
+        this.valoracionAmpliandoRestauant = valoracionAmpliandoRestauant;
+    }
+
+    public Integer getFotoAdicionalRestaurante() {
+        return fotoAdicionalRestaurante;
+    }
+
+    public void setFotoAdicionalRestaurante(Integer fotoAdicionalRestaurante) {
+        this.fotoAdicionalRestaurante = fotoAdicionalRestaurante;
+    }
 
     public String getNombre() {
         return nombre;
