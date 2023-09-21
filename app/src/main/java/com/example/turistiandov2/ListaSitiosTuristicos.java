@@ -1,13 +1,20 @@
 package com.example.turistiandov2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.turistiandov2.adaptadores.adaptadoresTurismos;
 import com.example.turistiandov2.moldes.Moldeturismo;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -16,6 +23,8 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
     ArrayList<Moldeturismo> ListaSitiosTuristicos=new ArrayList<>();
     RecyclerView recyclerView;
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +32,36 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
         recyclerView=findViewById(R.id.listdinamicasitiosturisticos);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this,recyclerView.VERTICAL,false));
+
+
+        db.collection("turismo")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                String contactoTursimo = document.getString("nombre");
+                                String descripcionTurismo = document.getString("descripcion");
+                                String nombreTurismo = document.getString("nombre");
+                                String precioTurismo = document.getString("precio");
+                                String telefonoTurismo = document.getString("telefono");
+                                Toast.makeText(ListaSitiosTuristicos.this, contactoTursimo, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, descripcionTurismo, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, nombreTurismo, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, precioTurismo, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, telefonoTurismo, Toast.LENGTH_SHORT).show();
+
+
+                            }
+                        } else {
+                            // Log.w(TAG, "Error getting documents.", task.getException());
+                        }
+                    }
+                });
+
+
 
         llenarListConDatos();
         adaptadoresTurismos adaptadoresTurismos = new adaptadoresTurismos( ListaSitiosTuristicos);
