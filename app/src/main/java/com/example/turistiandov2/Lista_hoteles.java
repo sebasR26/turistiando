@@ -33,7 +33,6 @@ public class Lista_hoteles extends AppCompatActivity {
         recyclerView=findViewById(R.id.litadinmicahoteles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
-
         db.collection("hoteles")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -41,25 +40,20 @@ public class Lista_hoteles extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
+                                String  nombreHotel=document.getString("nombre");
 
-                                String nombreHotel = document.getString("nombre");
-                                String precioHotel = document.getString("precio");
-                                String  fotoHotel = document.getString("foto");
-                                String telefonoHotel = document.getString("telefono");
-                                String descripcionHotel = document.getString("descripcion");
                                 Toast.makeText(Lista_hoteles.this, nombreHotel, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(Lista_hoteles.this, precioHotel, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(Lista_hoteles.this, fotoHotel, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(Lista_hoteles.this, telefonoHotel, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(Lista_hoteles.this, descripcionHotel, Toast.LENGTH_SHORT).show();
 
 
                             }
                         } else {
-                           // Log.w(TAG, "Error getting documents.", task.getException());
+
                         }
                     }
                 });
+
+
+
 
 
         llenarListaConDatos();

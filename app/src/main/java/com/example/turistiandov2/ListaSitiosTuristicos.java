@@ -34,32 +34,7 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this,recyclerView.VERTICAL,false));
 
 
-        db.collection("turismo")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
 
-                                String contactoTursimo = document.getString("nombre");
-                                String descripcionTurismo = document.getString("descripcion");
-                                String nombreTurismo = document.getString("nombre");
-                                String precioTurismo = document.getString("precio");
-                                String telefonoTurismo = document.getString("telefono");
-                                Toast.makeText(ListaSitiosTuristicos.this, contactoTursimo, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(ListaSitiosTuristicos.this, descripcionTurismo, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(ListaSitiosTuristicos.this, nombreTurismo, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(ListaSitiosTuristicos.this, precioTurismo, Toast.LENGTH_SHORT).show();
-                                Toast.makeText(ListaSitiosTuristicos.this, telefonoTurismo, Toast.LENGTH_SHORT).show();
-
-
-                            }
-                        } else {
-                            // Log.w(TAG, "Error getting documents.", task.getException());
-                        }
-                    }
-                });
 
 
 
